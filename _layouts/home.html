@@ -1,0 +1,145 @@
+---
+layout: default
+---
+<section class="hero" data-image style="--hero-image: url('{{ '/assets/images/hero-group.jpeg' | relative_url }}');">
+  <div class="container">
+    <div class="eyebrow">Computational Materials Science · EEL/USP</div>
+    <h1>Simulations, data and open science for advanced materials.</h1>
+    <p>ComputEEL/MatSci blends DFT, CALPHAD and thermodynamic modelling to explore superconductors, metallic alloys and intermetallic compounds at the Materials Engineering Department (DEMAR) of EEL/USP.</p>
+    <div class="pill-row">
+      <a class="button" href="{{ '/team/' | relative_url }}">Meet the team</a>
+      <a class="pill" href="{{ '/papers/' | relative_url }}">View publications</a>
+      <a class="pill" href="{{ '/news/' | relative_url }}">Latest news</a>
+    </div>
+    <div class="pill-row">
+      <span class="pill">DFT &amp; electronic properties</span>
+      <span class="pill">CALPHAD &amp; phase diagrams</span>
+      <span class="pill">Superconductivity</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">About the group</h2>
+      <span class="muted">Based in Lorena · São Paulo</span>
+    </div>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit,minmax(300px,1fr));">
+      <div class="card">
+        <p class="lead"><strong>ComputEEL/MatSci</strong> is a Computational Materials Science group at the <strong>Materials Engineering Department (DEMAR)</strong> of <strong>EEL/USP</strong>. We work on superconductivity, magnetism and thermodynamics of alloys, focusing on <em>ab initio</em> simulations, CALPHAD modelling and thermal properties of alloys and intermetallics.</p>
+        <ul class="list">
+          <li><strong>Coordinator:</strong> Prof. Luiz T. F. Eleno</li>
+          <li><a href="{{ '/team/' | relative_url }}">Full team</a> plus national and international collaborators</li>
+          <li><a href="{{ '/papers/' | relative_url }}">Publications</a> in Nature Communications, PRB, CALPHAD and more</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Focus areas</h3>
+        <div class="feature-grid" style="gap:0.75rem;">
+          <div class="feature" style="color: var(--neutral-900); background:#f3f8fd; border-color: transparent;">
+            <h3>Quantum materials</h3>
+            <p class="muted">Superconductors, magnetism, phonon spectra and electron–phonon coupling.</p>
+          </div>
+          <div class="feature" style="color: var(--neutral-900); background:#f3f8fd; border-color: transparent;">
+            <h3>Thermodynamics & phases</h3>
+            <p class="muted">Phase diagrams, alloy stability, heat capacity and phase transitions.</p>
+          </div>
+          <div class="feature" style="color: var(--neutral-900); background:#f3f8fd; border-color: transparent;">
+            <h3>Digital tools</h3>
+            <p class="muted">Reproducible workflows, visualizations and scripts to speed up research.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Quick highlights</h2>
+      <a class="pill" href="{{ '/papers/' | relative_url }}">See all results</a>
+    </div>
+    <div class="stat-grid">
+      <div class="stat">
+        <strong>20+</strong>
+        <span>Artigos revisados por pares</span>
+      </div>
+      <div class="stat">
+        <strong>{{ site.data.team | where: 'status','member' | size }}</strong>
+        <span>Pesquisadores ativos</span>
+      </div>
+      <div class="stat">
+        <strong>3</strong>
+        <span>Main lines: DFT, CALPHAD, quantum materials</span>
+      </div>
+      <div class="stat">
+        <strong>2017</strong>
+        <span>Start of the group at EEL/USP</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Team spotlight</h2>
+      <a class="pill" href="{{ '/team/' | relative_url }}">See everyone</a>
+    </div>
+    <div class="team-grid">
+      {% assign current = site.data.team | where: 'status', 'member' | slice: 3 %}
+      {% for person in current %}
+        <div class="person">
+          <img src="{{ person.image | relative_url }}" alt="{{ person.name }}">
+          <div class="role">{{ person.role }}</div>
+          <h3>{{ person.name }}</h3>
+          {% if person.alias %}<p class="muted">{{ person.alias }}</p>{% endif %}
+          <p class="muted">{{ person.focus }}</p>
+          <div class="pill-row">
+            <a class="pill" href="{{ person.url | default: person.link | default: '/team/' | relative_url }}">Ver perfil</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Latest news</h2>
+      <a class="pill" href="{{ '/news/' | relative_url }}">All news</a>
+    </div>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit,minmax(280px,1fr));">
+      {% assign posts = site.categories.news | slice: 3 %}
+      {% if posts == empty %}
+        <p class="muted">Updates will appear here as soon as they are added.</p>
+      {% else %}
+        {% for post in posts %}
+          <div class="card">
+            <div class="tag">{{ post.date | date: "%d %b %Y" }}</div>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="muted">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+            <a class="pill" href="{{ post.url | relative_url }}">Ler mais</a>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container section-contrast">
+    <div class="section-header">
+      <h2 class="section-title" style="color:#fff;">Collaborations & contact</h2>
+      <a class="pill" href="mailto:{{ site.email }}">E-mail</a>
+    </div>
+    <p>We welcome collaborations in materials modelling, experimental data and new computational methodologies. Reach out for projects, co-supervision or to plug into our digital workflows.</p>
+    <div class="pill-row">
+      <a class="button" href="{{ '/contact/' | relative_url }}">Contact the group</a>
+      <a class="pill" href="{{ '/papers/' | relative_url }}">Publication portfolio</a>
+    </div>
+  </div>
+</section>

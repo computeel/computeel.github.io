@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{% assign person = site.data.team | where: 'id', page.person_id | first %}
+<section class="hero" data-image style="--hero-image: url('{{ page.hero_image | default: person.image | default: '/assets/images/hero-default.jpg' | relative_url }}');">
+  <div class="container">
+    <div class="eyebrow">Perfil · {{ person.status | default: 'Equipe' | capitalize }}</div>
+    <h1>{{ person.name | default: page.title }}</h1>
+    {% if person.role %}<p class="muted">{{ person.role }}</p>{% endif %}
+    {% if person.alias %}<div class="pill-row"><span class="pill">{{ person.alias }}</span></div>{% endif %}
+  </div>
+</section>
+
+<section class="page-section container">
+  <div class="media">
+    {% if person.image %}
+      <img src="{{ person.image | relative_url }}" alt="{{ person.name }}">
+    {% endif %}
+    <div>
+      {% if person.focus %}<p class="muted">{{ person.focus }}</p>{% endif %}
+      {% if person.bio %}<p>{{ person.bio }}</p>{% endif %}
+      {% if person.tags %}
+        <div class="pill-row">
+          {% for tag in person.tags %}
+            <span class="pill">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if person.links %}
+        <div class="pill-row">
+          {% for link in person.links %}
+            <a class="pill" href="{{ link.url }}" target="_blank" rel="noreferrer">{{ link.label }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if content %}
+    <div style="margin-top:1.5rem;">
+      {{ content }}
+    </div>
+  {% endif %}
+</section>

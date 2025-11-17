@@ -20,19 +20,47 @@
 
 title: ComputEEL/MatSci
 email: computeel@usp.br
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >
+  ComputEEL/MatSci – Computational Materials Science group at EEL/USP (DFT, CALPHAD and materials properties).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: " https://computeel.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://computeel.github.io" # the base hostname & protocol
+twitter_username:
+github_username:
+lang: pt-BR
+timezone: America/Sao_Paulo
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+
+permalink: /:categories/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: ComputEEL/MatSci
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+nav:
+  - title: Home
+    url: /
+  - title: Team
+    url: /team/
+  - title: Publications
+    url: /papers/
+  - title: News
+    url: /news/
+  - title: Contact
+    url: /contact/
+
+theme: null
 
 # Exclude from processing.
 # The following items will not be processed, by default.

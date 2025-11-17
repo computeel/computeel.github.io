@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Pires Ferreira | ComputEEL/MatSci</title>
+  <meta name="description" content="ComputEEL/MatSci – Computational Materials Science group at EEL/USP (DFT, CALPHAD and materials properties).">
+  <link rel="icon" href="/assets/images/logo-mark.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="person">
+  <div class="accent-bar"></div>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/">
+        <div class="brand-mark">
+          <img src="/assets/images/logo_eel_2017.png" alt="ComputEEL/MatSci">
+        </div>
+        <div class="brand-text">
+          <span class="brand-kicker">EEL/USP</span>
+          <span class="brand-name">ComputEEL/MatSci</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu" onclick="document.body.classList.toggle('nav-open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        
+          <a class="nav-link" href="/">Home</a>
+        
+          <a class="nav-link" href="/team/">Team</a>
+        
+          <a class="nav-link" href="/papers/">Publications</a>
+        
+          <a class="nav-link" href="/news/">News</a>
+        
+          <a class="nav-link" href="/contact/">Contact</a>
+        
+        <a class="nav-cta" href="/contact/">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    
+<section class="hero" data-image style="--hero-image: url('/assets/images/team/pedro.jpg');">
+  <div class="container">
+    <div class="eyebrow">Perfil · Member</div>
+    <h1>Pedro Pires Ferreira</h1>
+    <p class="muted">Graduate · Engineering Physics</p>
+    <div class="pill-row"><span class="pill">Mozão</span></div>
+  </div>
+</section>
+
+<section class="page-section container">
+  <div class="media">
+    
+      <img src="/assets/images/team/pedro.jpg" alt="Pedro Pires Ferreira">
+    
+    <div>
+      <p class="muted">Superconductivity, quantum materials and ab initio modelling.</p>
+      <p>Engenheiro Físico formado na EEL-USP, mestrando com experiência em DFT e propriedades de supercondutores, integrando teoria e algoritmos para novos materiais.
+</p>
+      
+        <div class="pill-row">
+          
+            <span class="pill">Supercondutores</span>
+          
+            <span class="pill">DFT</span>
+          
+            <span class="pill">Ab initio</span>
+          
+        </div>
+      
+      
+    </div>
+  </div>
+
+  
+    <div style="margin-top:1.5rem;">
+      <p>Engineering Physics graduate from EEL-USP, Pedro calls himself an “entanglement” of engineer and physicist. He works with DFT and superconductivity modelling, exploring electronic properties and phonons in materials and alloys.</p>
+
+<p>At ComputEEL/MatSci he leads graduate projects on quantum materials, combining theory, algorithms and visualizations to accelerate discoveries.</p>
+
+<p>Topics of interest: superconductivity, electron–phonon coupling, DFT workflows, materials informatics.</p>
+
+    </div>
+  
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-name">ComputEEL/MatSci</p>
+        <p class="muted">Computational Materials Science · DEMAR · EEL/USP</p>
+        <p class="muted">E-mail: <a href="mailto:computeel@usp.br">computeel@usp.br</a></p>
+      </div>
+      <div class="footer-links">
+        <p class="muted strong">Navigation</p>
+        <div class="pill-grid">
+          
+            <a class="pill" href="/">Home</a>
+          
+            <a class="pill" href="/team/">Team</a>
+          
+            <a class="pill" href="/papers/">Publications</a>
+          
+            <a class="pill" href="/news/">News</a>
+          
+            <a class="pill" href="/contact/">Contact</a>
+          
+        </div>
+      </div>
+      <div>
+        <p class="muted strong">Redes</p>
+        <ul class="plain">
+          <li><a href="https://github.com/computeel" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://sites.usp.br/computeel/" target="_blank" rel="noreferrer">sites.usp.br/computeel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 ComputEEL/MatSci · Built with Jekyll
+    </div>
+  </footer>
+
+  <script>
+    // fecha o menu ao clicar fora em telas pequenas
+    document.addEventListener('click', function (event) {
+      if (!document.body.classList.contains('nav-open')) return;
+      const nav = document.querySelector('.site-nav');
+      if (nav && !nav.contains(event.target)) {
+        document.body.classList.remove('nav-open');
+      }
+    });
+  </script>
+</body>
+</html>

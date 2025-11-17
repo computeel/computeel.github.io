@@ -1,0 +1,176 @@
+- id: luiz-eleno
+  name: Prof. Luiz T. F. Eleno
+  alias: "#Elenão"
+  role: "Coordinator · Professor, DEMAR/EEL-USP"
+  status: member
+  image: /assets/images/team/eleno.jpg
+  focus: "DFT, CALPHAD, electronic and thermal properties in alloys and intermetallics."
+  bio: >
+    Metallurgical engineer (Poli-USP), with stays at MPIE (Germany) and CIRIMAT (France);
+    PhD in thermodynamic modelling of alloys and professor at DEMAR/EEL-USP, working on
+    superconductivity, magnetism and computational thermodynamics.
+  tags: ["DFT", "CALPHAD", "Supercondutividade"]
+  url: /team/01-luizeleno/
+
+- id: lucas-balducci
+  name: Lucas Alexandre Balducci Novaes
+  alias: "???"
+  role: "Undergraduate · Engineering Physics"
+  status: member
+  image: /assets/images/team/lucasbalducci.jpg
+  focus: "Undergraduate research in materials and scientific computing in the group."
+  bio: >
+    Natural de São Paulo, ingressou em Engenharia Física motivado por entender as relações
+    entre natureza e sociedade; encontrou na ComputEEL/MatSci a combinação de ciência de materiais
+    e computação para conduzir seus projetos de iniciação científica.
+  tags: ["Undergraduate research", "Materials", "DFT"]
+  url: /team/BalducciLucas/
+
+- id: joao-cardoso
+  name: João Pedro Ribeiro Cardoso
+  alias: "Jão Segredo"
+  role: "Undergraduate · Engineering Physics"
+  status: member
+  image: /assets/images/team/joaopedro.jpg
+  focus: "Computational modelling applied to materials."
+  bio: >
+    Nascido em 2001 no interior paulista, curioso sobre como o conhecimento transforma o mundo;
+    dedica-se a engenharia e pesquisa para acelerar inovações em materiais.
+  tags: ["Engineering Physics", "Applied research"]
+  url: /team/CardosoJoaoPedro/
+
+- id: pedro-ferreira
+  name: Pedro Pires Ferreira
+  alias: "Mozão"
+  role: "Graduate · Engineering Physics"
+  status: member
+  image: /assets/images/team/pedro.jpg
+  focus: "Superconductivity, quantum materials and ab initio modelling."
+  bio: >
+    Engenheiro Físico formado na EEL-USP, mestrando com experiência em DFT e propriedades de
+    supercondutores, integrando teoria e algoritmos para novos materiais.
+  tags: ["Supercondutores", "DFT", "Ab initio"]
+  url: /team/FerreiraPedro/
+
+- id: ana-mendonca
+  name: Ana Luísa Carvalho Mendonça
+  alias: "???"
+  role: "Undergraduate · Engineering"
+  status: member
+  image: /assets/images/team/analuisa.jpg
+  focus: "Thermodynamics and computational simulations of alloys."
+  bio: >
+    Da cidade fluminense de Paraíba do Sul, fascinada por entender como as coisas são feitas;
+    usa simulações e termodinâmica para explorar materiais como engenheira em formação.
+  tags: ["Thermodynamics", "Undergraduate research"]
+  url: /team/MendoncaAnaLuisa/
+
+- id: pedro-almeida
+  name: Pedro Luís Rodrigues de Almeida
+  alias: "???"
+  role: "Ex-graduando"
+  status: former
+  image: /assets/images/team/pedroluis.jpg
+  focus: "Engineering and materials during undergrad."
+  bio: >
+    Natural de Pitangueiras (SP), interessado desde cedo em compreender o funcionamento do universo;
+    participou do grupo durante a graduação em Engenharia.
+  tags: ["Ex-aluno", "Engenharia"]
+  url: /team/AlmeidaPedro/
+
+- id: thiago-dorini
+  name: Thiago Trevizam Dorini
+  alias: "van Helsing"
+  role: "Former researcher · current: Université de Lorraine (Institute Jean Lamour)"
+  status: former
+  image: /assets/images/team/thiago.jpg
+  focus: "Materials and electronic properties."
+  bio: >
+    Atuou como aluno de pós-graduação no ComputEEL/MatSci; atualmente no Institute Jean Lamour,
+    Université de Lorraine (França).
+  tags: ["Alumni", "Advanced materials"]
+  url: /team/DoriniThiago/
+
+- id: antonio-manesco
+  name: Antônio Lucas Rigotti Manesco
+  alias: "Tonhão"
+  role: "Former undergraduate · current: Kavli Institute of Nanoscience, TU Delft"
+  status: former
+  image: /assets/images/team/tonhao.jpg
+  focus: "Nanoscience and superconductivity."
+  bio: >
+    Ex-aluno do grupo, segue pesquisa no Kavli Institute of Nanoscience, Delft University of Technology.
+  tags: ["Alumni", "Nanoscience"]
+  url: /team/ManescoAntonio/
+
+- id: leonardo-rodrigues
+  name: Leonardo Izaias Rodrigues
+  alias: "???"
+  role: "Former undergraduate"
+  status: former
+  image: /assets/images/team/leonardo.jpg
+  focus: "Engineering and materials applications."
+  bio: >
+    Natural de um município do interior paulista, juntou-se ao grupo durante a graduação em Engenharia.
+  tags: ["Alumni"]
+  url: /team/RodriguesLeonardo/
+
+- id: igor-yamamoto
+  name: Igor Hideki Cabianca Yamamoto
+  alias: "Amazonense"
+  role: "Former undergraduate"
+  status: former
+  image: /assets/images/team/igor.jpg
+  focus: "Superconductivity and modelling."
+  bio: >
+    Participou do ComputEEL/MatSci como aluno de graduação, interessado em materiais quânticos.
+  tags: ["Alumni"]
+  url: /team/YamamotoIgor/
+
+- id: lucas-correa
+  name: Lucas Eduardo Corrêa
+  alias: "Caju"
+  role: "Collaborator · Graduate"
+  status: collaborator
+  image: /assets/images/team/caju.jpg
+  focus: "Materials research and experimental/theoretical collaboration."
+  bio: >
+    Colaborador de pós-graduação do grupo, atuando em projetos conjuntos de modelagem e caracterização.
+  tags: ["Collaborator"]
+  url: /team/CorreaLucas/
+
+- id: leandro-faria
+  name: Leandro Rodrigues de Faria
+  alias: "???"
+  role: "Collaborator · Graduate"
+  status: collaborator
+  image: /assets/images/team/leandro.jpg
+  focus: "Modelling in materials engineering."
+  bio: >
+    Colabora com o ComputEEL/MatSci em projetos de pós-graduação ligados a termodinâmica e simulação.
+  tags: ["Collaborator"]
+  url: /team/FariaLeandro/
+
+- id: jeff-machado
+  name: Prof. Antonio Jefferson da Silva Machado
+  alias: "Jeffinho"
+  role: "Experimental collaborator"
+  status: collaborator
+  image: /assets/images/team/jeff.jpg
+  focus: "Experimental collaboration with the group."
+  bio: >
+    Professor e colaborador experimental em projetos do ComputEEL/MatSci.
+  tags: ["Collaborator", "Experimental"]
+  url: /team/MachadoJefferson/
+
+- id: gabrielle-weber
+  name: Prof. Gabrielle Weber Martins
+  alias: "UEBA!"
+  role: "Theoretical collaborator"
+  status: collaborator
+  image: /assets/images/team/gabi.jpg
+  focus: "Theoretical collaboration in materials and electronic structures."
+  bio: >
+    Professora e colaboradora teórica em iniciativas de pesquisa conjunta com o ComputEEL/MatSci.
+  tags: ["Collaborator", "Theory"]
+  url: /team/WeberGabrielle/
