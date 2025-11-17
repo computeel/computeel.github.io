@@ -403,15 +403,16 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: var(--radius-lg);
   padding: 1.25rem;
+  color: var(--neutral-900);
 }
 
 .feature h3 {
   margin: 0 0 0.25rem;
-  color: #fff;
+  color: var(--neutral-900);
 }
 
 .feature .muted {
-  color: #d7e6f3;
+  color: var(--neutral-700, #425166);
 }
 
 .team-grid {
